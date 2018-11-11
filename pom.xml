@@ -15,4 +15,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>xcad-releases</id>
+      <name>xcad-releases</name>
+      <url>http://ec2-13-233-55-15.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/xcad-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>xcard-snapshots</id>
+      <name>xcard-snapshots</name>
+      <url>http://ec2-13-233-55-15.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/xcard-snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
